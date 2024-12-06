@@ -44,7 +44,7 @@ This project is about building a React application that combines different piece
 
 ## Clone the repository to your local machine:
 
-- git clone:  <https://github.com/your-username/practical-website.git
+- git clone:  <https://github.com/khushipuri-WMP/React-Assignment.git
 
 
 ## Install the required dependencies:
