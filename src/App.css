@@ -1,0 +1,57 @@
+
+#root {
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #cbf0dc;
+}
+
+/*  Class for card background color */
+.primary-card-color{
+  background-color: #08604d;
+}
+
+/*  Class for 600px padding  */
+.w-600{
+  width: 600px;
+}
+
+/*   Class for 9px padding  */
+.padding-9{
+  padding: 9px;
+}
+
+/*  Defined a class for 55% width  */
+.w-55{
+  width: 55%;
+}
+
+/*  Defined a class for 40% width  */
+.w-40{
+  width: 40% 
+}
+
+.active-link {
+  text-decoration: underline; 
+  font-weight: bold;          
+}
+
+
+/* Media Query for max screen 900px */
+@media (max-width: 900px) {
+  .w-40{
+    width: 70%;
+  }
+}
+
+/* Media Query for max screen 510px */
+@media (max-width: 510px) {
+  .w-55{
+    width: 87%;
+  }
+  .w-40{
+    width: 88%;
+  }
+}
