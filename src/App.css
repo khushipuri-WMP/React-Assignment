@@ -33,14 +33,23 @@ body{
   width: 40% 
 }
 
-.active-link {
-  text-decoration: underline; 
-  font-weight: bold;          
+.nav-link.active {
+  color: #f0cc3f !important; /* Change to your preferred color */
+  font-weight: bold;
+}
+
+.task-text {
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 
 /* Media Query for max screen 900px */
 @media (max-width: 900px) {
+  .w-55{
+    width: 70%;
+  }
   .w-40{
     width: 70%;
   }
@@ -49,9 +58,9 @@ body{
 /* Media Query for max screen 510px */
 @media (max-width: 510px) {
   .w-55{
-    width: 87%;
+    width: 85%;
   }
   .w-40{
-    width: 88%;
+    width: 85%;
   }
 }

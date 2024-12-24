@@ -3,12 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import Navbar from './components/Navbar';      // Component for navbar
-import Todo from './Domain/Todo-list/Todocom';    // Component for To-Do-List
+import Todocom from './Domain/Todo-list';   // Component for To-Do-List
 import Data from './Domain/CountryState/Data';   // Component to show Country and State data
-import Post from './Domain/PostSelector';       // Component for post selector
 import Home from './Domain/Home';        // Component for Home page 
-import CountryStateMain from './Domain/CountryState';       //  Component for Country and state selection
 import PageNotFound from './Domain/pageNotFound/PageNotFound';      //  Component for pageNotFound
+import CountryStateSelector from './Domain/CountryState';
+import PostSelector from './Domain/PostSelector'; // Updated import
+
 
 
 function App() {
@@ -20,10 +21,10 @@ function App() {
       <Routes>
         <Route path='*' element={<PageNotFound />}></Route>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/CountrySelect' element={<CountryStateMain />}></Route>
+        <Route path='/CountrySelect' element={<CountryStateSelector />}></Route>
         <Route path='/Data' element={<Data />}></Route>
-        <Route path='/Todo' element={<Todo />}></Route>
-        <Route path='/Post' element={<Post />}></Route>
+        <Route path='/Todo' element={<Todocom />}></Route>
+        <Route path='/postSelector' element={<PostSelector />}></Route>
       </Routes>
     </BrowserRouter>
   )
