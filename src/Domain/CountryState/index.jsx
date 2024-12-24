@@ -1,4 +1,3 @@
-// index.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import countryData from "./Country-State-data.json"; // JSON file containing country and state data
@@ -49,12 +48,13 @@ function CountryStateSelector() {
   const handleStateChange = (stateId) => {
     // Find the selected state data by its ID
     const state = states.find((s) => s.id === stateId);
-    
-    // Update the selected state
-    setSelectedStateId(stateId);
-    setSelectedState({ id: stateId, name: state?.state_name || "" });
-    setError(""); // Clear any error messages
+    if (state) {
+      setSelectedStateId(stateId);
+      setSelectedState({ id: stateId, name: state.name }); // Ensure key `name` exists in `states`
+      setError("");
+    }
   };
+  
 
   // Handle the form submission
   const handleFormSubmit = (e) => {

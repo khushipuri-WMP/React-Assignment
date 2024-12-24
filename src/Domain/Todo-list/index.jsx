@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { getStoredTodos } from "../../utils/localStorageUtils";  // Import the function from utils
 import TaskInput from "./component/TaskInput";
